@@ -617,8 +617,6 @@ Connection ~ 5550 2300
 Wire Wire Line
 	5550 2300 5450 2300
 NoConn ~ 6050 1350
-Text GLabel 4950 1350 0    50   Input ~ 0
-SCK
 Text GLabel 4950 1450 0    50   Input ~ 0
 MOSI
 Text GLabel 4950 1550 0    50   Output ~ 0
@@ -937,19 +935,6 @@ F 3 "~" H 5550 3750 50  0001 C CNN
 	1    5550 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5ADAE27F
-P 5150 3850
-F 0 "C?" H 5265 3896 50  0000 L CNN
-F 1 "0.01u" H 5265 3805 50  0000 L CNN
-F 2 "" H 5188 3700 50  0001 C CNN
-F 3 "~" H 5150 3850 50  0001 C CNN
-	1    5150 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 3700 5150 3700
 Wire Wire Line
 	5150 4000 5150 4050
 Wire Wire Line
@@ -980,16 +965,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5ADE9DC5
-P 1450 5950
-F 0 "#PWR?" H 1450 5700 50  0001 C CNN
-F 1 "GND" H 1455 5777 50  0000 C CNN
-F 2 "" H 1450 5950 50  0001 C CNN
-F 3 "" H 1450 5950 50  0001 C CNN
-	1    1450 5950
+P 1450 6300
+F 0 "#PWR?" H 1450 6050 50  0001 C CNN
+F 1 "GND" H 1455 6127 50  0000 C CNN
+F 2 "" H 1450 6300 50  0001 C CNN
+F 3 "" H 1450 6300 50  0001 C CNN
+	1    1450 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 5850 1450 5900
+	1450 5850 1450 6250
 $Comp
 L Device:LED D?
 U 1 1 5ADF4258
@@ -1048,12 +1033,12 @@ F 3 "~" H 850 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  5550 850  5900
+	850  5550 850  6250
 Wire Wire Line
-	850  5900 1450 5900
-Connection ~ 1450 5900
+	850  6250 1050 6250
+Connection ~ 1450 6250
 Wire Wire Line
-	1450 5900 1450 5950
+	1450 6250 1450 6300
 Wire Wire Line
 	1450 5150 850  5150
 Wire Wire Line
@@ -1099,14 +1084,12 @@ Wire Wire Line
 Wire Wire Line
 	2850 5450 2850 5750
 Wire Wire Line
-	2850 5850 2850 5900
+	1450 6250 2450 6250
 Wire Wire Line
-	1450 5900 2450 5900
+	2450 5850 2450 6250
+Connection ~ 2450 6250
 Wire Wire Line
-	2450 5850 2450 5900
-Connection ~ 2450 5900
-Wire Wire Line
-	2450 5900 2850 5900
+	2450 6250 2850 6250
 $Comp
 L power:+BATT #PWR?
 U 1 1 5AF3FD58
@@ -1205,4 +1188,33 @@ Connection ~ 2950 3600
 Wire Wire Line
 	3250 3600 3350 3600
 Connection ~ 3350 3600
+Text GLabel 4950 1350 0    50   Input ~ 0
+SCK
+NoConn ~ 5050 3700
+Text Notes 4150 3300 0    50   ~ 0
+Actual PN LP5907MFX-3.3/NOPB
+Text Notes 8100 4900 0    50   ~ 0
+TODO:\n- add cp2103\n- match LoRa to NRF\n- add buttons\n- add LEDs
+$Comp
+L Device:R R?
+U 1 1 5AFDF948
+P 1050 5950
+F 0 "R?" V 843 5950 50  0000 C CNN
+F 1 "10k" V 934 5950 50  0000 C CNN
+F 2 "" V 980 5950 50  0001 C CNN
+F 3 "~" H 1050 5950 50  0001 C CNN
+	1    1050 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 5850 2850 6250
+Wire Wire Line
+	1050 5650 1050 5800
+Wire Wire Line
+	1050 6100 1050 6250
+Connection ~ 1050 6250
+Wire Wire Line
+	1050 6250 1450 6250
+Text Notes 1500 6050 0    50   ~ 0
+10k = 100 mA charge
 $EndSCHEMATC
