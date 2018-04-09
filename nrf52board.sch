@@ -616,7 +616,6 @@ Wire Wire Line
 Connection ~ 5550 2300
 Wire Wire Line
 	5550 2300 5450 2300
-NoConn ~ 6050 1350
 Text GLabel 4950 1450 0    50   Input ~ 0
 MOSI
 Text GLabel 4950 1550 0    50   Output ~ 0
@@ -1194,7 +1193,7 @@ NoConn ~ 5050 3700
 Text Notes 4150 3300 0    50   ~ 0
 Actual PN LP5907MFX-3.3/NOPB
 Text Notes 8100 4900 0    50   ~ 0
-TODO:\n- add cp2103\n- match LoRa to NRF\n- add buttons\n- add LEDs
+TODO:\n- add cp2103\n- match LoRa to NRF\n- add buttons\n- add LEDs\n- add LoRa IPX/UFL
 $Comp
 L Device:R R?
 U 1 1 5AFDF948
@@ -1217,4 +1216,5 @@ Wire Wire Line
 	1050 6250 1450 6250
 Text Notes 1500 6050 0    50   ~ 0
 10k = 100 mA charge
+NoConn ~ 6050 1350
 $EndSCHEMATC

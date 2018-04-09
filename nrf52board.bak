@@ -1193,8 +1193,8 @@ SCK
 NoConn ~ 5050 3700
 Text Notes 4150 3300 0    50   ~ 0
 Actual PN LP5907MFX-3.3/NOPB
-Text Notes 7500 4600 0    50   ~ 0
-TODO:\n- match LoRa to NRF\n- add buttons\n- add LEDs
+Text Notes 8100 4900 0    50   ~ 0
+TODO:\n- add cp2103\n- match LoRa to NRF\n- add buttons\n- add LEDs
 $Comp
 L Device:R R?
 U 1 1 5AFDF948
