@@ -934,10 +934,6 @@ F 3 "~" H 5550 3750 50  0001 C CNN
 	1    5550 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 4000 5150 4050
-Wire Wire Line
-	5150 4050 4650 4050
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5ADC16C1
@@ -956,9 +952,6 @@ Wire Wire Line
 Connection ~ 5550 3600
 Wire Wire Line
 	5550 3900 5550 4050
-Wire Wire Line
-	5550 4050 5150 4050
-Connection ~ 5150 4050
 Wire Wire Line
 	1850 5450 2450 5450
 $Comp
@@ -1193,7 +1186,7 @@ NoConn ~ 5050 3700
 Text Notes 4150 3300 0    50   ~ 0
 Actual PN LP5907MFX-3.3/NOPB
 Text Notes 8100 4900 0    50   ~ 0
-TODO:\n- add cp2103\n- match LoRa to NRF\n- add buttons\n- add LEDs\n- add LoRa IPX/UFL
+TODO:\n- add cp2103\n- RX/TX as in DK\n- RTS/CTS to RESET/DEBUG\n- match LoRa to NRF\n- add buttons as in DK\n- add LEDs as in DK\n- add LoRa IPX/UFL
 $Comp
 L Device:R R?
 U 1 1 5AFDF948
@@ -1217,4 +1210,6 @@ Wire Wire Line
 Text Notes 1500 6050 0    50   ~ 0
 10k = 100 mA charge
 NoConn ~ 6050 1350
+Wire Wire Line
+	4650 4050 5550 4050
 $EndSCHEMATC
