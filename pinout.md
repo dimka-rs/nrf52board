@@ -1,5 +1,10 @@
-Board pinout
-------------
+# Board pinout
+
+See tables below
+
+![alt text](images/nrf52board_pinout.jpg "pinout 1")
+![alt text](images/nrf52board_pinout2.jpg "pinout 2")
+
 
 |pin|usage|usage|pin|
 |---|-----|-----|---|
