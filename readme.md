@@ -12,10 +12,10 @@
 - USB-UART CP2102
 - LDO LP5907MFX-3.3
 - LiPo charger MCP73831-2-OT
-- Transistor 
-
 
 [See board pinout](pinout.md)
 
-Board image:
+Board images:
+
 ![](images/pcbs.jpg "PCB Image")
+![](images/assembled.jpg "Assembled boards")
