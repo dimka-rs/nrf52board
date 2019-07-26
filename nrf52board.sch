@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:nrf52board-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -573,7 +573,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 1200 7950 1200
 $Comp
-L RF_AM_FM:RFM95W-868S2 U5
+L nrf52board-rescue:RFM95W-868S2-RF_AM_FM U5
 U 1 1 5AC451EB
 P 5550 1650
 F 0 "U5" H 5200 2100 50  0000 C CNN
@@ -783,7 +783,7 @@ F 3 "" H 4300 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Specialized:USB_B_Micro J2
+L nrf52board-rescue:USB_B_Micro-Connector_Specialized J2
 U 1 1 5AD0C80B
 P 1150 3550
 F 0 "J2" H 1205 4017 50  0000 C CNN
@@ -1191,7 +1191,7 @@ NoConn ~ 6050 1350
 Wire Wire Line
 	4650 4050 5550 4050
 $Comp
-L usb-uart:CP2102-GM U6
+L nrf52board-rescue:CP2102-GM-usb-uart U6
 U 1 1 5B070B6B
 P 5900 5450
 F 0 "U6" H 5900 6215 50  0000 C CNN
