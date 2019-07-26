@@ -1,10 +1,7 @@
 # NRF52 + LoRa dev board
 
-## TODO / known issues
-- Fix Q1 footprint
-- Add separate LoRa DIO to NRF52 connections
-- Add USB ESD protection
-- Add LoRa IPX/UFL connector
+## Known issues
+- Q1 footprint does not match any fets I have
 
 ## Components
 - [NRF52 module E73-2G4M04S](https://www.aliexpress.com/item/32820692238.html) 
