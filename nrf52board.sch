@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:nrf52board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1094,17 +1093,6 @@ F 3 "" H 2950 3100 50  0001 C CNN
 	1    2950 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_PMOS_DSG Q1
-U 1 1 5AF40185
-P 3250 3400
-F 0 "Q1" H 3456 3446 50  0000 L CNN
-F 1 "Q_PMOS_DSG" H 3456 3355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 3500 50  0001 C CNN
-F 3 "~" H 3250 3400 50  0001 C CNN
-	1    3250 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3350 3100 3350 3200
 Wire Wire Line
@@ -1135,8 +1123,6 @@ F 3 "" H 2950 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 4150 2950 4250
-Wire Wire Line
-	3350 3600 4000 3600
 Connection ~ 4000 3600
 $Comp
 L Device:D_Schottky D2
@@ -1155,9 +1141,6 @@ Connection ~ 2950 3400
 Wire Wire Line
 	2950 3600 2950 3850
 Connection ~ 2950 3600
-Wire Wire Line
-	3250 3600 3350 3600
-Connection ~ 3350 3600
 Text GLabel 4950 1350 0    50   Input ~ 0
 P0.25
 NoConn ~ 5050 3700
@@ -1571,4 +1554,20 @@ Wire Wire Line
 	10300 5650 10400 5650
 Wire Wire Line
 	10700 5650 10800 5650
+Wire Wire Line
+	3250 3600 3350 3600
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 6046DA55
+P 3250 3400
+F 0 "Q1" H 3455 3446 50  0000 L CNN
+F 1 "PMV65XP" H 3455 3355 50  0000 L CNN
+F 2 "" H 3450 3500 50  0001 C CNN
+F 3 "~" H 3250 3400 50  0001 C CNN
+	1    3250 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 3600
+Wire Wire Line
+	3350 3600 4000 3600
 $EndSCHEMATC
